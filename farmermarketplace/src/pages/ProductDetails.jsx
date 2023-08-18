@@ -49,7 +49,7 @@ const ProductDetails = () => {
     <Fragment>
       {farmerAddress === address && (
         <div className="flex items-center justify-center w-[92vw] absolute top-20 right-0 h-[770px]">
-          <h1 className="text-red-500 text-6xl font-bubble">
+          <h1 className="dark:bg-gray-800 px-4 py-2 rounded-lg text-6xl font-bubble">
             Farmer can't purchase their product
           </h1>
         </div>
@@ -59,16 +59,30 @@ const ProductDetails = () => {
           <div className="grid grid-cols-2 w-full">
             <div className="flex flex-col justify-center items-center">
               <img className="w-[500px] h-[500px]" src={item.imageUrl} alt="" />
-              <p className="text-2xl text-black font-semibold font-rubik mt-5">
-                Price:{' '}
-                <span className="text-emerald-600">
-                  {item.productPrice} ETH
-                </span>
-              </p>
-              <p className="text-2xl text-black font-semibold font-rubik">
-                Stock:{' '}
-                <span className="text-emerald-600">{item.weight} Kg</span>
-              </p>
+              <div className="flex flow-row justify-between items-center mt-10 gap-16">
+                <p className="text-2xl text-black font-semibold font-rubik">
+                  Price:{' '}
+                  <span className="text-emerald-600">
+                    {item.productPrice} ETH
+                  </span>
+                </p>
+                <p className="text-2xl text-black font-semibold font-rubik">
+                  Stock:{' '}
+                  <span className="text-emerald-600">{item.weight} Kg</span>
+                </p>
+              </div>
+              <div className="flex flow-row justify-between items-center mt-3 gap-16">
+                <p className="text-2xl text-black font-semibold font-rubik">
+                  Total Price:{' '}
+                  <span className="text-emerald-600">
+                    {productWeight * item.productPrice} ETH
+                  </span>
+                </p>
+                <p className="text-2xl text-black font-semibold font-rubik">
+                  Total Weight:{' '}
+                  <span className="text-emerald-600">{productWeight} Kg</span>
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col mt-24 text-black mr-2">
@@ -147,7 +161,9 @@ const ProductDetails = () => {
                     type="text"
                     name=""
                     id=""
-                    placeholder="Amount ETH"
+                    placeholder={`Amount ${
+                      productWeight * item.productPrice
+                    } ETH`}
                     value={amount}
                     onChange={(e) => setAmount(e.target.value)}
                   />

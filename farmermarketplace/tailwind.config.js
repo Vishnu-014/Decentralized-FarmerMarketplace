@@ -19,7 +19,7 @@ module.exports = {
       },
       animation: {
         text: 'text 5s ease infinite',
-        imgMove: 'imgMove 5s linear 1s ease-out infinite',
+        imgMove: 'imgMove 5s 1s ease-out infinite',
       },
       keyframes: {
         text: {
@@ -34,19 +34,19 @@ module.exports = {
         },
         imgMove: {
           '0%': {
-            'transform': 'rotate3d(0, 1, 0, 0deg)'
+            'transform': 'rotate3d(0, 1, 0, 10deg)'
           },
           '30%': {
-            'transform': 'rotate3d(0, 1, 0, 5deg)'
+            'transform': 'rotate3d(0, 1, 0, 20deg)'
           },
           '60%': {
-            'transform': 'rotate3d(0, 1, 0, 0deg)'
+            'transform': 'rotate3d(0, 1, 0, 10deg)'
           },
           '80%': {
-            'transform': 'rotate3d(0, 1, 0, 5deg)'
+            'transform': 'rotate3d(0, 1, 0, 20deg)'
           },
           '100%': {
-            'transform': 'rotate3d(0, 1, 0, 0deg)'
+            'transform': 'rotate3d(0, 1, 0, 10deg)'
           },
         }
       },

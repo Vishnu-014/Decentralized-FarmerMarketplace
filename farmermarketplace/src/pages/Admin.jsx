@@ -97,7 +97,7 @@ const Admin = () => {
     <Fragment>
       {farmerAddress !== address && (
         <div className="flex items-center justify-center w-[92vw] absolute top-20 right-0 h-[770px]">
-          <h1 className="text-red-500 text-6xl font-bubble">
+          <h1 className="dark:bg-gray-800 px-4 py-2 rounded-lg text-6xl font-bubble">
             Only Farmer Can Access
           </h1>
         </div>

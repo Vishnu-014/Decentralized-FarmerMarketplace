@@ -6,7 +6,7 @@ function About() {
       <img
         src="https://ninetheme.com/themes/html-templates/oganik/assets/images/shapes/call-shape-2-1.png"
         alt=""
-        className="absolute bottom-0 left-0 -z-10 animate-imgMove"
+        className="absolute bottom-0 left-0 -z-10 animate-imgMove transition-all duration-700 object-contain"
       />
       <div className="grid grid-cols-2 w-full m-5">
         <div>
