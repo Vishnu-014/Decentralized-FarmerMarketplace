@@ -11,10 +11,11 @@
 
 <h2>Project Screenshots:</h2>
 
-![Home Page]([https://ibb.co/259fJ7t](https://im4.ezgif.com/tmp/ezgif-4-27d21ab2a1.png)
 ![alt text](https://im4.ezgif.com/tmp/ezgif-4-27d21ab2a1.png)
-![alt text](https://github.com/Vishnu-014/Charity-Donation-using-Blockchain/blob/main/charitydonation/screenshots/Screenshot%202023-07-26%20at%209.35.02%20AM.png)
-![alt text](https://github.com/Vishnu-014/Charity-Donation-using-Blockchain/blob/main/charitydonation/screenshots/Screenshot%202023-07-26%20at%209.35.41%20AM.png)
+![alt text](https://im4.ezgif.com/tmp/ezgif-4-15a7414a22.png)
+![alt text](https://im4.ezgif.com/tmp/ezgif-4-9593d44042.png)
+![alt text](https://im4.ezgif.com/tmp/ezgif-4-a4e2e58a94.png)
+
 
 <h2>🛠️ Installation Steps:</h2>
 
